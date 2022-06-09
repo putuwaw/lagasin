@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image"
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 export default function Index() {
@@ -15,17 +16,152 @@ export default function Index() {
 					color: white;
 					font-weight: 700;
 				}
+        .aplikasi{
+					font-weight: 400;
+					--tw-text-opacity: 1;
+					color: rgb(207 250 254 / var(--tw-text-opacity));
+				}
+        .informasi{
+          font-weight: 400;
+					--tw-text-opacity: 1;
+					color: rgb(207 250 254 / var(--tw-text-opacity));
+        }
 			`}</style>
       <Navbar/>
       <main>
-        <div className="container p-6 max-w-md mx-auto bg-cyan-100 sm:max-w-xl md:max-w-2xl lg:max-w-5xl min-h-screen">
-            <div>
-              <h1 className="text-lg text-blue-500">
-                Cari vaksin jadi mudah dengan <span className="font-bold">Lagasin</span> 
-              </h1>
-              <Image src="/vercel.svg" height={144} width={144} alt="Logo Lagasin"/>
-              <p>Dapatkan vaksin di puskesmas terdekat dengan cepat dan akurat</p>
+        <div className="bg-cyan-100 container mx-auto max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-5xl">
+          {/* hero section */}
+          <div className="min-h-screen bg-green-300 px-9 pt-20">
+            <div className="flex flex-col items-center bg-green-300 md:flex-row md:justify-center md:pt-28 md:w-full">
+              <div className="mt-1 md:flex md:justify-center md:item-center mb-5 md:order-2 md:mb-0 md:w-1/2">
+                <Image
+                  src="/gambar.png"
+                  height={144} // Desired size with correct aspect ratio
+                  width={144} // Desired size with correct aspect ratio
+                  alt="Logo Lagasin"
+                />
+              </div>
+              <div className="flex flex-col items-center md:order-1 md:w-1/2 text-center">
+                <h1 className="text-blue-500 font-semibold mb-3 text-2xl">
+                  Cari vaksin jadi mudah dengan{" "}
+                  <span className="font-bold">Lagasin</span>
+                </h1>
+                <p className="mb-5">Dapatkan vaksin di puskesmas terdekat dengan informasi yang cepat dan akurat.</p>
+                <a href="#why">
+                  <button className="rounded-md bg-green-400 text-white font-bold shadow-xl hover:bg-green-500 p-3">
+                    Selengkapnya
+                  </button>
+                </a>
+              </div>
             </div>
+          </div>
+          {/* what is */}
+          <div className="bg-red-300 pt-20 min-h-screen" id="why">
+            <div className="flex items-center justify-center text-2xl font-bold">
+              <h3>Apa itu Lagasin?</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center p-9 md:flex-row">
+              <div className="mb-4 md:w-1/2 md:items-center md:justify-center md:text-center">
+                <Image
+                  src="/gambar.png"
+                  height={144} // Desired size with correct aspect ratio
+                  width={144}
+                  alt="Logo Lagasin"
+                />
+              </div>
+              <div className="md:w-1/2">
+                Lagasin adalah aplikasi pemetaan vaksin. suplay vaksin diperlukan,
+                sehingga harus ada pemetaan jarak dair puskesmas ke puskesmas. Lagasin
+                hadir untuk memberikan pencarian puskesmas terdekat, khsusnya di wilayah
+                Kecamatna Seririt, Kabupaten Bleleng, Bali
+              </div>
+            </div>
+          </div>
+          {/* why */}
+          <div className="bg-sky-300">
+            <div className="flex items-center justify-center text-2xl font-bold">
+              <h3>Mengapa harus Lagasin?</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center text-center p-9 md:flex-row">
+              {/* 3 item, fitur 1, fitur 2, fitur 3 */}
+
+              <div className="md:w-1/3 flex flex-col items-center text-center  bg-white rounded-lg shadow-lg p-3 md:mr-4 md:hover:shadow-xl mb-4">
+                {/* tiap item punya 3 komponen: img, title, content */}
+                <div>
+                  <Image
+                    src="/gambar.png"
+                    height={144} // Desired size with correct aspect ratio
+                    width={144}
+                    alt="Logo Lagasin"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">Open Source</h3>
+                </div>
+                <div>
+                  <p>Lagasin merupkan aplikasi open source sehingga kode dari program dapat dilihat langsung</p>
+                </div>
+              </div>
+              
+              <div className="md:w-1/3 flex flex-col items-center text-center bg-white rounded-lg shadow-lg p-3 md:mr-4 mb-4 md:h-5/6">
+                {/* tiap item punya 3 komponen: img, title, content */}
+                <div>
+                  <Image
+                    src="/gambar.png"
+                    height={144} // Desired size with correct aspect ratio
+                    width={144}
+                    alt="Logo Lagasin"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">Djikstra Algorithm</h3>
+                </div>
+                <div>
+                  <p>Lagasin menggunakan algoritma Shortest Path Djikstra yang mampu mendeteksi jalur tercepat.</p>
+                </div>
+              </div>
+
+              <div className="md:w-1/3 flex flex-col items-center text-center  bg-white rounded-lg shadow-lg p-3 mb-4 w-full md:h-full">
+                {/* tiap item punya 3 komponen: img, title, content */}
+                <div>
+                  <Image
+                    src="/gambar.png"
+                    height={144} // Desired size with correct aspect ratio
+                    width={144}
+                    alt="Logo Lagasin"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg">Google Maps</h3>
+                </div>
+                <div>
+                  <p>Lagasin dengan bantuan API dari google Maps, wilayah disajikan dengan sangat akurat</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* try it now */}
+          {/* what is */}
+          <div className="bg-purple-300 pt-20 min-h-screen" id="why">
+            <div className="flex items-center justify-center text-2xl font-bold">
+              <h3>Coba Lagasin Sekarang!</h3>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                Tertarik mencoba Lagasin? Ayo coba Lagasin untuk mencari tempat vaksinasi terdekat! Coba sekarang dengan gratis!
+              </div>
+              <div>
+                  <Link href="/aplikasi">
+                <button className="font-bold text-white bg-red-300 p-3 rounded-lg shadow-md hover:bg-red-400">
+                    <a>Coba Sekarang</a>
+                </button>
+                  </Link>
+              </div>
+            </div>
+          </div>
+          {/* why */}
         </div>
       </main>
       <Footer/>
