@@ -19,11 +19,16 @@ export default function Informasi() {
 					--tw-text-opacity: 1;
 					color: rgb(207 250 254 / var(--tw-text-opacity));
 				}
+				.aplikasi{
+					font-weight: 400;
+					--tw-text-opacity: 1;
+					color: rgb(207 250 254 / var(--tw-text-opacity));
+				}
 			`}</style>
 			<Navbar/>
 				<div className="container p-6 max-w-md mx-auto bg-cyan-100 sm:max-w-xl md:max-w-2xl lg:max-w-5xl min-h-screen">
 					<h1 className="font-bold text-3xl">Informasi</h1>
-					<p>Ini adalah informasi mengenai aplikasi.</p>
+					<p>Ini adalah tampilan informasi.</p>
 				</div>
 			<Footer/>
 		</>
