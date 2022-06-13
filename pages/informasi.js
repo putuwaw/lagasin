@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 export default function Informasi() {
@@ -26,9 +27,147 @@ export default function Informasi() {
 				}
 			`}</style>
 			<Navbar/>
-				<div className="container p-6 max-w-md mx-auto bg-cyan-100 sm:max-w-xl md:max-w-2xl lg:max-w-5xl min-h-screen">
-					<h1 className="font-bold text-3xl">Informasi</h1>
-					<p>Ini adalah tampilan informasi.</p>
+				<div className="container max-w-md mx-auto bg-cyan-100 sm:max-w-xl md:max-w-2xl lg:max-w-5xl min-h-screen">
+					{/* About Lagasin */}
+					<div className="bg-orange-400 min-h-screen pt-16">
+					<div className="container mx-auto min-h-screen max-w-md bg-cyan-100 sm:max-w-xl md:max-w-2xl lg:max-w-5xl">
+  {/* tentang lagasin */}
+  <div className="min-h-screen bg-orange-300 pt-16">
+    <div className="text-center font-bold text-2xl">
+      <h3>Tentang Lagasin</h3>
+    </div>
+    <div className="flex flex-col items-center justify-center md:flex-row md:p-4">
+      <div className="flex w-1/3">
+        <Image
+          className="w-3/4"
+          src="/images/people.svg"
+          alt="Logo Lagasin"
+          width={144}
+          height={144}
+        />
+      </div>
+      <div className="w-1/2 text-justify">
+        <p>
+          Lagasin adalah akronim dari &apos;Langsung Dapat Vaksin&apos;. Kata &apos;lagas&apos;
+          sendiri dalam Bahasa Bali memiliki arti tidak ragu. Diharapkan dengan
+          hadirnya apliaksi ini, orang-orang akan semakin mudah dan tidak ragu
+          untuk mendapatkan vaksin.
+        </p>
+      </div>
+    </div>
+  </div>
+  {/* teknologi  */}
+  <div className="min-h-screen bg-green-300">
+    <div className="text-center font-bold text-2xl">
+      <h3>Teknologi</h3>
+    </div>
+    <div className="text-center">
+      <p className="mb-4">Lagasin dibangun dengan menggunakan</p>
+    </div>
+    <div className="flex items-center justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center">
+          <div className="text-white z-10 text-opacity-0 hover:text-opacity-100 hover:font-bold absolute hover:bg-slate-600 hover:bg-opacity-90 w-28 h-28 rounded-full flex items-center justify-center duration-300">
+            <h3 className="">Tailwind CSS</h3>
+          </div>
+          <Image
+            src="/images/tailwind_css_logo.svg"
+            alt="Logo Tailwind"
+            className="w-5/6 z-0"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center">
+          <div className="text-white z-10 text-opacity-0 hover:text-opacity-100 hover:font-bold absolute hover:bg-slate-600 hover:bg-opacity-90 w-28 h-28 rounded-full flex items-center justify-center duration-300">
+            <h3 className="">Next JS</h3>
+          </div>
+          <Image
+            src="/images/next_js_logo.svg"
+            alt="Logo Tailwind"
+            className="w-5/6 z-0"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center">
+          <div className="text-white z-10 text-opacity-0 hover:text-opacity-100 hover:font-bold absolute hover:bg-slate-600 hover:bg-opacity-90 w-28 h-28 rounded-full flex items-center justify-center duration-300">
+            <h3 className="">NPM</h3>
+          </div>
+          <Image
+            src="/images/npm_logo.svg"
+            alt="Logo Tailwind"
+            className="w-5/6 z-0"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center">
+          <div className="text-white z-10 text-opacity-0 hover:text-opacity-100 hover:font-bold absolute hover:bg-slate-600 hover:bg-opacity-90 w-28 h-28 rounded-full flex items-center justify-center duration-300">
+            <h3 className="">VS Code</h3>
+          </div>
+          <Image
+            src="/images/vs_code_logo.svg"
+            alt="Logo Tailwind"
+            className="w-3/5 z-0"
+            width={80}
+            height={80}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* dokumentasi */}
+  <div className="min-h-screen bg-purple-300 pt-16">
+    <div className="text-center font-bold text-2xl">
+      <h3>Dokumentasi</h3>
+    </div>
+    {/* source code */}
+    <div className="flex flex-col items-start justify-start md:flex-row p-4">
+      <div className="w-1/3 flex justify-center items-center">
+        <Image
+          className="rounded-full w-1/2"
+          src="/images/github_logo.svg"
+          alt="Logo Lagasin"
+          width={90}
+          height={90}
+        />
+      </div>
+      <div className="w-1/3">
+        <h3 className="text-center md:text-left">Source Code</h3>
+        <p>
+          Source code dari program ini secara keseluruhan dapat dilihat langsung{" "}
+          <a className="font-bold underline" href="https://github.com/putuwaw">
+            disini
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+    {/* laporan */}
+    <div className="flex flex-col items-center justify-items-end md:flex-row-reverse p-4">
+      <div className="w-1/3 flex items-center justify-center">
+        <Image
+          className="rounded-full w-1/2"
+          src="/images/github_logo.svg"
+          alt="Logo Lagasin"
+          width={90}
+          height={90}
+        />
+      </div>
+      <div className="md:text-right w-1/3">
+        <h3 className="text-center md:text-right">Laporan</h3>
+        <p>
+          Untuk melihat jurnal atau laporan mengenai graph dapat dilihat{" "}
+          <a className="font-bold underline" href="#">
+            disini
+          </a>{" "}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+					</div>
 				</div>
 			<Footer/>
 		</>
