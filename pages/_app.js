@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
 
   return(
     <>
-      <Script src="../data.js"></Script>
+      <Script src="/js/data.js"></Script>
       <Component {...pageProps} />
     </>
   );
