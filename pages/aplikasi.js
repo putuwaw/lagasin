@@ -7,8 +7,9 @@ function initMap(){
 	var map;
 	var Path;
 	map = new google.maps.Map(document.getElementById('map'),{
-		zoom: 18,
-		center: {lat: -8.192919, lng: 114.936617},
+		zoom: 13,
+		// Pusat: Kantor Camat Seririt
+		center: {lat: -8.192452, lng: 114.938026}, 
 		options: {
 			fullscreenControl: false,
 			zoomControl: false,
@@ -26,13 +27,13 @@ function initMap(){
 	Path.setMap(map);
 	var line = Path.getPath();
 	var temp = new google.maps.LatLng({
-		lat: -8.192919,
-		lng: 114.936617
+		lat: -8.192452, 
+		lng: 114.938026
 	});
 	line.push(temp);
 	temp = new google.maps.LatLng({
-		lat: -8.192297, 
-		lng:  114.938047
+		lat: -8.192828, 
+		lng: 114.936633
 	});
 	line.push(temp);
 }
@@ -101,23 +102,59 @@ export default function Aplikasi() {
 							</p>
 					</details>
 				</div>
-				<div id="map" className="w-ful min-h-screen shadow-md">
+				<div id="map" className="w-ful min-h-screen shadow-md rounded-md">
 				<GoogleMap
-						zoom={18}
-						center={{lat: -8.192919, lng: 114.936617}}
+						zoom={13}
+						center={{lat: -8.192452, lng: 114.938026}}
 						options={{
 							fullscreenControl: false,
 							zoomControl: false,
 							keyboardShortcuts: false,
 						}}
-						mapContainerClassName="w-full min-h-screen"
+						mapContainerClassName="w-full min-h-screen shadow-md rounded-md"
 					>
-						<Marker position={{ lat: -8.192954706185185, lng: 114.93662059307098 }}/>
-						<Marker position={{ lat: -8.192259139134764, lng: 114.93804216384886 }}/>
-						<Marker position={{ lat: -8.191621977411053, lng: 114.95200574398041 }}/>
-						<Marker position={{ lat: -8.20260092765849, lng: 114.88756164908409 }}/>
-						<Marker position={{ lat: -8.223348735617037, lng: 114.9422639608383 }}/>
-						<Marker position={{ lat: -8.195856428893714, lng: 114.94332343339921 }}/>
+						<Marker position={
+								{
+									// Kantor Camat
+      						// (-8.192452, 114.938026)
+									lat: -8.192452, lng: 114.938026,
+								}
+							}/>
+						<Marker position={
+								{
+									// Puskesmas Seririt 1
+      						// (-8.192828, 114.936633)
+									lat: -8.192828, lng: 114.936633,
+								}
+							}/>
+						<Marker position={
+								{
+									// Puskesmas Seririt 2
+      						// (-8.203176, 114.886372)
+									lat: -8.203176, lng: 114.886372,
+								}
+							}/>
+						<Marker position={
+								{
+									// Puskesmas Seririt 3
+      						// (-8.223675, 114.942618)
+									lat: -8.223675, lng: 114.942618,
+								}
+							}/>
+						<Marker position={
+								{
+									// Rumah Sakit Pratama - Tangguwisia
+      						// (-8.191781, 114.950825)
+									lat: -8.191781, lng: 114.950825,
+								}
+							}/>
+						<Marker position={
+								{
+									// Rumah Sakit Santi Graha - Sulanyah
+      						// (-8.195790, 114.943202)
+									lat: -8.195790, lng: 114.943202,
+								}
+							}/>
 					</GoogleMap>
 				</div>				
 			</div>
