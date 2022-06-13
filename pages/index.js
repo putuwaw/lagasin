@@ -47,7 +47,7 @@ export default function Index() {
                   <span className="font-bold">Lagasin</span>
                 </h1>
                 <p className="mb-5">Dapatkan vaksin di puskesmas terdekat dengan informasi yang cepat dan akurat.</p>
-                <a href="#why">
+                <a href="#lagasin">
                   <button className="rounded-md bg-green-400 text-white font-bold shadow-xl hover:bg-green-500 p-3">
                     Selengkapnya
                   </button>
@@ -56,7 +56,7 @@ export default function Index() {
             </div>
           </div>
           {/* what is */}
-          <div className="bg-red-300 pt-20 min-h-screen" id="why">
+          <div className="bg-red-300 pt-20 min-h-screen" id="lagasin">
             <div className="flex items-center justify-center text-2xl font-bold">
               <h3>Apa itu Lagasin?</h3>
             </div>
@@ -70,14 +70,21 @@ export default function Index() {
                 />
               </div>
               <div className="md:w-1/2">
-                Lagasin adalah aplikasi pemetaan vaksin. suplay vaksin diperlukan,
-                sehingga harus ada pemetaan jarak dair puskesmas ke puskesmas. Lagasin
-                hadir untuk memberikan pencarian puskesmas terdekat, khsusnya di wilayah
-                Kecamatna Seririt, Kabupaten Bleleng, Bali
+                Lagasin adalah aplikasi pemetaan vaksin. Suplay vaksin diperlukan,
+                sehingga harus ada pemetaan jarak dari puskesmas ke puskesmas. Lagasin
+                hadir untuk memberikan pencarian puskesmas terdekat, khususnya di wilayah
+                Kecamatan Seririt, Kabupaten Buleleng, Bali
               </div>
             </div>
+            <div className="flex justify-center shadow-sm">
+              <Link href={"/informasi"}>
+                <a>
+                  <button className="text-white p-3 rounded-md font-bold bg-purple-400 hover:bg-purple-500">Baca Selengkapnya</button>
+                </a>
+              </Link>
+            </div>
           </div>
-          {/* why */}
+          {/* lagasin */}
           <div className="bg-sky-300">
             <div className="flex items-center justify-center text-2xl font-bold">
               <h3>Mengapa harus Lagasin?</h3>
@@ -144,7 +151,7 @@ export default function Index() {
 
           {/* try it now */}
           {/* what is */}
-          <div className="bg-purple-300 pt-20 min-h-screen" id="why">
+          <div className="bg-purple-300 pt-20 min-h-screen" id="lagasin">
             <div className="flex items-center justify-center text-2xl font-bold">
               <h3>Coba Lagasin Sekarang!</h3>
             </div>
@@ -161,7 +168,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-          {/* why */}
+          {/* lagasin */}
         </div>
       </main>
       <Footer/>
