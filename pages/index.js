@@ -61,7 +61,7 @@ export default function Index() {
                 <span className="font-extrabold text-sky-500">Lagasin</span>
               </h1>
               <p className="mb-5">
-                Dapatkan vaksin di puskesmas terdekat dengan informasi yang
+                Dapatkan vaksin di tempat vaksinasi terdekat dengan informasi yang
                 cepat dan akurat.
               </p>
               <a href="#lagasin">
@@ -105,11 +105,10 @@ export default function Index() {
               />
             </div>
             <div className="md:w-1/2 text-center lg:text-justify mt-3 lg:mt-0">
-              Lagasin adalah aplikasi pemetaan vaksin. Saat ini suplai vaksin
-              sangat diperlukan, sehingga harus ada pemetaan jarak dari
-              puskesmas ke puskesmas. Lagasin hadir untuk memberikan pencarian
-              puskesmas terdekat, khususnya di wilayah Kecamatan Seririt,
-              Kabupaten Buleleng, Bali.
+              Lagasin adalah aplikasi pencarian tempat vaksinasi. 
+              Mungkin Anda pernah ingin mendapatkan vaksin, tapi tempat yang Anda datangi tidak melaksanakan vaksinasi. 
+              Oleh karena itu, Lagasin hadir untuk memberikan pencarian tempat vaksinasi terdekat bagi Anda, 
+              khususnya di wilayah Kecamatan Seririt, Kabupaten Buleleng, Bali.
             </div>
           </div>
           <div className="flex justify-center mb-20 -mt-3">
@@ -164,7 +163,7 @@ export default function Index() {
               <h3 className="font-bold text-md mt-3">FW Algorithm</h3>
               <p>
                 Lagasin menggunakan algoritma Flyod-Warshall yang mampu mencari
-                rute terdekat.
+                tempat vaksinasi terdekat.
               </p>
             </div>
             <div

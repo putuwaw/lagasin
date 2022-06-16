@@ -82,8 +82,8 @@ export default function Aplikasi() {
             Lagasin
           </h1>
           <p data-aos="fade-right" className="my-3">
-            Untuk menggunakan aplikasi Lagasin, pilih lokasi awal Anda. Lagasin
-            akan memberikan rute puskesmas terdekat kepada Anda.
+            Untuk menggunakan Lagasin, silakan pilih lokasi awal Anda. Lagasin
+            akan mencarikan tempat vaksinasi terdekat bagi Anda.
           </p>
           <div data-aos="fade-right" className="mb-3">
             <select

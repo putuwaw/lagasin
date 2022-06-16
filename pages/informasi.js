@@ -62,10 +62,10 @@ export default function Informasi() {
             </div>
             <div className="text-center pt-4 lg:w-1/2 lg:text-justify">
               <p>
+                Lagasin dibuat untuk memenuhi tugas Mata Kuliah Matematika Diskrit 2.
                 Lagasin adalah akronim dari &apos;Langsung Dapat Vaksin&apos;.
-                Kata &apos;lagas&apos; sendiri dalam Bahasa Bali memiliki arti
-                tidak ragu. Diharapkan dengan hadirnya aplikasi ini, orang-orang
-                akan semakin mudah dan tidak ragu untuk mendapatkan vaksin.
+                Kata &apos;lagas&apos; sendiri dalam Bahasa Bali memiliki arti tidak ragu.
+                Diharapkan dengan hadirnya aplikasi ini, orang-orang akan semakin mudah dan tidak ragu untuk mendapatkan vaksin.
               </p>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function Informasi() {
                 Source code dari program ini secara keseluruhan dapat dilihat
                 langsung{" "}
                 <a
-                  className="font-bold underline"
+                  className="font-bold underline text-sky-500"
                   href="https://github.com/putuwaw/lagasin"
                 >
                   disini
@@ -210,8 +210,8 @@ export default function Informasi() {
                 Laporan dari penerapan algoritma Floyd-Warshall ini dapat
                 dilihat langsung{" "}
                 <a
-                  className="font-bold underline"
-                  href="https://github.com/putuwaw"
+                  className="font-bold underline text-sky-500"
+                  href="https://drive.google.com/file/d/1C9i_QqjPBhEl1hpK1jLysl5hkgI1yGhh/view?usp=sharing"
                 >
                   disini
                 </a>
