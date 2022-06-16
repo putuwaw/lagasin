@@ -38,7 +38,7 @@ function init() {
   var select = document.getElementById("start");
   StartLocation = select.options[select.selectedIndex].value;
   IsVisited[StartLocation] = 1;
-  PathResult.push("Rute Perjalanan: ");
+  PathResult.push("Tempat Vaksinasi: ");
   PathResult.push(LocationName[StartLocation]);
   // Create initial coordinate for line
   var temp = new google.maps.LatLng({
