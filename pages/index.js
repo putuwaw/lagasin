@@ -38,15 +38,15 @@ export default function Index() {
             >
               <Image
                 src="/images/doctor.svg"
-                height={280} // Desired size with correct aspect ratio
-                width={280} // Desired size with correct aspect ratio
+                height={280}
+                width={280}
                 alt="Logo Lagasin"
               />
               <div className="absolute -z-10 -top-2 lg:-top-16">
                 <Image
                   src="/images/blob1.svg"
-                  height={450} // Desired size with correct aspect ratio
-                  width={450} // Desired size with correct aspect ratio
+                  height={450}
+                  width={450}
                   alt="Blob"
                 />
               </div>
@@ -73,7 +73,6 @@ export default function Index() {
           </div>
         </div>
         {/* end of hero section */}
-
         {/* what is */}
         <div className="pt-24 min-h-screen px-8" id="lagasin">
           <div
@@ -92,14 +91,14 @@ export default function Index() {
               <div className="absolute">
                 <Image
                   src="/images/blob2.svg"
-                  height={380} // Desired size with correct aspect ratio
+                  height={380}
                   width={400}
                   alt="People asking"
                 />
               </div>
               <Image
                 src="/images/peopleasking.svg"
-                height={280} // Desired size with correct aspect ratio
+                height={280}
                 width={280}
                 alt="People asking"
               />
@@ -122,7 +121,6 @@ export default function Index() {
           </div>
         </div>
         {/* end of what is */}
-
         {/* why lagasin */}
         <div className="mt-40 min-h-screen px-8">
           <div
@@ -185,7 +183,6 @@ export default function Index() {
           </div>
         </div>
         {/* end of why lagasin */}
-
         {/* try now */}
         <div className="pt-20 lg:pt-0 h-96 pb-96 px-8">
           <div
@@ -198,7 +195,7 @@ export default function Index() {
           </div>
           <div className="flex flex-col items-center text-center">
             <div data-aos="fade-up" className="mb-4">
-              Tertarik mencoba Lagasin? Ayo coba Lagasin untuk mencari puskesmas
+              Tertarik mencoba Lagasin? Ayo coba Lagasin untuk mencari tempat vaksinasi
               terdekat! Coba sekarang gratis!
             </div>
           </div>
