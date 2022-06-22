@@ -144,7 +144,7 @@ export default function Index() {
               />
               <h3 className="font-bold text-md mt-3">Open Source</h3>
               <p>
-                Lagasin adalah aplikasi open source sehingga kode dari program
+                Lagasin adalah aplikasi open source, sehingga kode dari program
                 dapat dilihat langsung.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function Index() {
               />
               <h3 className="font-bold text-md mt-3">FW Algorithm</h3>
               <p>
-                Lagasin menggunakan algoritma Flyod-Warshall yang mampu mencari
+                Lagasin menggunakan algoritma Floyd-Warshall yang mampu mencari
                 tempat vaksinasi terdekat.
               </p>
             </div>
